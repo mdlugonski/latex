@@ -4,7 +4,9 @@
    % by użyć polskich znaków w systemach Linux
    % używamy kodowania "latin2" lub "utf8", dla Windows "cp1250"
    
-\usepackage{amsmath} 
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
 \title{\LaTeX}
 \author{Mateusz Długoński}
 \date{}
@@ -19,14 +21,14 @@ Jest to przykładowy dokument w języku \LaTeX\ na potrzeby zajęć z przedmiotu
 \section{Tekst}\label{sec:tekst}
 1. Poker dla początkującego gracza
 
-Jak każdy rodzaj gier karcianych także i poker posiada kilkanaście systemów rozgrywek, trybów, sposobów i rodzajów gry. Niektóre z nich dostosowane są jedynie dla początkujących pokerzystów, inne dotyczą tylko tych bardziej zaawansowanych, którzy znają wszystkie zasady i tajniki pokera. Oczywiście w przypadku osób zaczynających przygodę z tą grą popularny jest system rozgrywki obejmujący rozdanie pięciu kart a następnie wymienienie kilku lub wszystkich z nich. Gracze mają wtedy całościowy obraz swojej sytuacji oraz mogą z dużym prawdopodobieństwem ocenić, jakie karty trafiły się przeciwnikowi. Jest to o tyle łatwe, że nie gra się całą talią, ale tylko 24 kartami.
+Jak każdy rodzaj gier karcianych także i poker posiada kilkanaście systemów rozgrywek, trybów, sposobów i rodzajów gry. Niektóre z nich dostosowane są jedynie dla początkujących pokerzystów, inne dotyczą tylko tych bardziej zaawansowanych, którzy znają wszystkie zasady i tajniki pokera. Oczywiście w przypadku osób zaczynających przygodę z tą grą popularny jest system rozgrywki obejmujący rozdanie pięciu kart a następnie wymienienie kilku lub wszystkich z nich. Gracze mają wtedy całościowy obraz swojej sytuacji oraz mogą z dużym prawdopodobieństwem ocenić, jakie karty trafiły się przeciwnikowi. Jest to o tyle łatwe, że nie gra się całą talią, ale tylko 24 kartami.\\
 W takim systemie gry niemożliwy jest jednak udział więcej jak 3 pokerzystów. Zasady rozgrywki są takie same jak w innych rodzajach pokera – zarówno układ jak i hierarchia kart pozostaje bez zmian. Nadal można też podbijać stawki (każdy gracz ma określony limit podbić) oraz pasować, jeśli pula będzie dla nas zbyt wysoka.
 Rozgrywki pokerowe dla początkujących graczy nie obejmują zazwyczaj skomplikowanych i wymagających dużej wiedzy oraz szybkich obliczeń związanych z prawdopodobieństwem. Jest to zwykle gra prowadzona jedynie dla rozrywki, a nie w formie sportu lub zakładów pieniężnych. Wielu specjalistów uważa, że to doskonały sposób na oswojenie się z samym pokerem, jego ogólnymi zasadami oraz atmosferą, jaka panuje przy stole. Dzięki temu można też skuteczniej poznać techniki oraz systemy gry, a także podejrzeć reakcje innych graczy i nauczyć się je odczytywać.
 \\
 \\
 \noindent2. Bardziej zaawansowane techniki pokerowe
 
-W przypadku pokera dla początkujących – pięciokartowego, dobieranego – trudno mówić o skomplikowanych technikach gry, umiejętności blefowania czy szybkiego liczenia możliwych kombinacji kart. Inaczej jest w trybach gry bardziej zaawansowanej, która przeznaczona jest dla doświadczonych graczy i występuje przynajmniej w kilku odmianach.
+W przypadku pokera dla początkujących – pięciokartowego, dobieranego – trudno mówić o skomplikowanych technikach gry, umiejętności blefowania czy szybkiego liczenia możliwych kombinacji kart. Inaczej jest w trybach gry bardziej zaawansowanej, która przeznaczona jest dla doświadczonych graczy i występuje przynajmniej w kilku odmianach.\\
 Zaawansowane techniki pokerowe spotkać można między innymi w systemach gry takich jak Omaha oraz Texas Hold’em, które od uczestników wymagają większego zaangażowania i umiejętności. Talia nie składa się tu już z 24 kart, ale z 52, a ilość graczy przy stole może wynosić nawet 10 osób. Do ręki nie dostaje się też od razu pięciu, ale dwie lub trzy karty, przez co prawdopodobieństwo wygranej stoi po ogromnym znakiem zapytania. W takich technikach gry ważny jest przede wszystkim blef oraz umiejętność ukrywania swoich emocji. O wiele większą rolę odgrywa też przypadek i los, które w dużej mierze decydują o rozdaniu kart. W przypadku Texas Hold’em ważnym czynnikiem pozostaje też podnoszenie stawki i obstawianie (niektórzy grają mają nawet obowiązek obstawiać w ciemno), ale też… pasowanie w odpowiednim momencie. Różne są też zasady dotyczące sprawdzania graczy – w jednym trybie gry może to zrobić każdy, w innym jedynie ten, który w danej chwili rzucił najwyższą stawkę. Zdecydowanie jednak nie jest kwestią dyskusji fakt, że zaawansowane techniki pokerowe są łatwe do przyswojenia, wymagają jednak dość sporej liczby ćwiczeń, które pozwolą na ich utrwalenie.
 
 
@@ -54,9 +56,48 @@ odwołania do równań:\\
 wzór(\ref{eqn:wzor1})to coś innego niż równanie(\ref{eqn:wzor2})\\
 
 
-
 % trzecia sekcja
-\section{Tabele}\label{sec:tabele}
+\section{Obrazki}\label{sec:obrazki}
+\begin{figure}
+\centering
+\includegraphics[width=5 cm]{rys1.jpg}
+\caption{Pierwszy minionek}\label{rys1}
+\end{figure}
 
+\begin{figure}
+\centering
+\includegraphics[width=5 cm]{rys2.jpg}
+\caption{Drugi minionek}\label{rys2}
+\end{figure}
+odwołania do obrazków:\\
+obraz(\ref{rys1})\\oraz obrazek(\ref{rys2})\\
+
+
+\section{Tabele}\label{sec:tabele}
+Tu są przykłady tabeli
+
+
+\section{Dodatki}\label{sec:dodatki}
+Różne dodatkowe symbole: \\
+
+
+
+\begin{thebibliography}
+{9}
+\bibitem
+{lamport94}
+Leslie Lamport,
+\emph{\LaTeX: A Document Preparation System}.
+Addison Wesley, Massachusetts,
+2nd Edition,
+1994.
+\bibitem
+{przyklad}
+Jakiś Autor,
+\emph{Jakiś tytuł}.
+Coś tam, Gdańsk,
+13-ta edycja,
+2015.
+\end{thebibliography}
 
 \end{document}
