@@ -74,11 +74,68 @@ obraz(\ref{rys1})\\oraz obrazek(\ref{rys2})\\
 
 
 \section{Tabele}\label{sec:tabele}
-Tu są przykłady tabeli
+Tu są przykłady tabeli \\
+
+równanie w postaci tabeli:
+\begin{equation}
+\label{eq:funkcjaf}
+f(x) = \left\lbrace
+% nawias z lewej strony
+\begin{array}{rcl}
+-x^2 & \text{dla} & x < 0,\\
+\sqrt{x} + \sin x & \text{dla} & x > 0.
+\end{array}
+\right.
+% pominięcie nawiasu z prawej strony
+\end{equation}
+
+przykład macieży (również tabela):  \\
+
+A=\left[ \begin{array}{cccc}
+a_{11} & a_{12} & \cdots & 
+a_{1q} \\
+a_{21} & a_{22} & \cdots & 
+a_{2q} \\
+\vdots & \vdots & \ddots & 
+\vdots \\
+a_{p1} & a_{p2} & \cdots & 
+a_{pq}
+\end{array} \right] \\
+
+kolejny przykład: \\
+
+\begin{tabular}
+{||c|r||} 
+\hline
+\multicolumn
+{2}{||c||}{Wspólny wiersz}
+% 2 – oznacza liczbę kolumn, z których połączymy komórki
+\\ \hline \hline
+(1,1) & (1,2) 
+\\
+(2,1) & (2,2)
+ \\ \hline
+(3,1) & (3,2) 
+\\
+(4,1) & (4,2) 
+\\ \hline
+\end{tabular}
+
+
+
 
 
 \section{Dodatki}\label{sec:dodatki}
 Różne dodatkowe symbole: \\
+-  \alpha,\beta,\gamma,\delta, \phi, \omega \\
+-  A, B,\Gamma, \Delta, \Omega \\
+-  \pm \\
+-  \infty \\
+-  {n \choose k}\ \\
+- \Updownarrow
+
+
+
 
 
 
